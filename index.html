@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Login</h1>
+  <form id="login-form">
+    <input type="text" id="login-username" placeholder="Nome de Usuário" required />
+    <input type="password" id="login-password" placeholder="Senha" required />
+    <button type="submit">Login</button>
+  </form>
+
+  <div id="task-management" style="display: none;">
+    <h2>Gerenciamento de Tarefas</h2>
+    <h3>Adicionar Tarefa</h3>
+    <form id="task-form">
+      <input type="text" id="titulo" placeholder="Título" required />
+      <input type="text" id="descricao" placeholder="Descrição" required />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <h3>Lista de Tarefas</h3>
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script> 
+</body>
+</html>
